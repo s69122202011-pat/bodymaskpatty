@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BODYMASK PATTY | Luxury Body Care</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div>BODYMASK</div>
+
+        <span>PATTY</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">หน้าแรก</a>
+
+        <a href="#products">สินค้า</a>
+
+        <a href="#sets">SET A / SET B</a>
+
+        <a href="#logic">Set Logic</a>
+
+        <a href="#about">เกี่ยวกับเรา</a>
+
+    </nav>
+
+
+    <button class="cart-btn"
+            onclick="openCart()">
+
+        🛍
+
+        <b id="cartCount">
+            0
+        </b>
+
+    </button>
+
+</header>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section id="home"
+         class="hero">
+
+
+    <!-- background decoration -->
+
+    <div class="glow glow-1"></div>
+
+    <div class="glow glow-2"></div>
+
+    <div class="sparkle s1">✦</div>
+
+    <div class="sparkle s2">✧</div>
+
+    <div class="sparkle s3">✦</div>
+
+
+    <div class="hero-container">
+
+
+        <!-- LEFT -->
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+
+                BODY CARE COLLECTION
+
+            </div>
+
+
+            <h1>
+
+                BEAUTY<br>
+
+                <span>BEGINS</span>
+
+                <small>WITH YOU</small>
+
+            </h1>
+
+
+            <p>
+
+                ดูแลผิวกายของคุณด้วย
+                Body Care Collection
+                ที่ผสานความหรูหรา
+                และการดูแลผิวอย่างอ่อนโยน
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#products"
+                   class="primary-btn">
+
+                    เลือกซื้อสินค้า
+
+                </a>
+
+
+                <a href="#sets"
+                   class="secondary-btn">
+
+                    ดู Collection
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-note">
+
+                ✦ LUXURY BODY CARE
+                &nbsp;&nbsp;
+                ✦ PREMIUM FORMULA
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT -->
+
+        <div class="hero-visual">
+
+
+            <!-- rotating rings -->
+
+            <div class="orbit orbit-1"></div>
+
+            <div class="orbit orbit-2"></div>
+
+            <div class="orbit orbit-3"></div>
+
+
+            <!-- Main circle -->
+
+            <div class="luxury-circle">
+
+
+                <div class="shine"></div>
+
+
+                <!-- product -->
+
+                <div class="hero-bottle">
+
+
+                    <div class="bottle-cap"></div>
+
+
+                    <div class="bottle-body">
+
+                        <div class="bottle-brand">
+
+                            BODY<br>
+
+                            MASK
+
+                        </div>
+
+
+                        <div class="bottle-sub">
+
+                            PATTY
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-dot dot-1"></div>
+
+                <div class="floating-dot dot-2"></div>
+
+                <div class="floating-dot dot-3"></div>
+
+
+            </div>
+
+
+            <div class="circle-label">
+
+                <span>BODY CARE</span>
+
+                <strong>COLLECTION</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INTRO
+========================================= -->
+
+<section class="intro">
+
+    <div>
+
+        <span>
+            OUR SIGNATURE
+        </span>
+
+        <h2>
+            Skin deserves
+            <i>something beautiful.</i>
+        </h2>
+
+        <p>
+            ผลิตภัณฑ์ดูแลผิวกายที่ออกแบบ
+            ให้ทุกวันของคุณรู้สึกพิเศษ
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PRODUCTS
+========================================= -->
+
+<section id="products"
+         class="products-section">
+
+
+    <div class="section-heading">
+
+        <span>
+            OUR COLLECTION
+        </span>
+
+        <h2>
+            สินค้าแนะนำ
+        </h2>
+
+        <p>
+            คัดสรร Body Care
+            สำหรับการดูแลผิวในทุกวัน
+        </p>
+
+    </div>
+
+
+
+    <!-- CATEGORY -->
+
+    <div class="filters">
+
+        <button class="filter active"
+                onclick="filterProducts('all',this)">
+
+            ทั้งหมด
+
+        </button>
+
+
+        <button class="filter"
+                onclick="filterProducts('mask',this)">
+
+            Body Mask
+
+        </button>
+
+
+        <button class="filter"
+                onclick="filterProducts('scrub',this)">
+
+            Body Scrub
+
+        </button>
+
+
+        <button class="filter"
+                onclick="filterProducts('lotion',this)">
+
+            Body Lotion
+
+        </button>
+
+
+        <button class="filter"
+                onclick="filterProducts('set',this)">
+
+            Gift Set
+
+        </button>
+
+    </div>
+
+
+
+    <!-- PRODUCTS -->
+
+    <div id="productGrid"
+         class="product-grid">
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SET COLLECTION
+========================================= -->
+
+<section id="sets"
+         class="sets-section">
+
+
+    <div class="section-heading">
+
+        <span>
+            THE SIGNATURE SETS
+        </span>
+
+        <h2>
+            Choose Your
+            <i>Ritual</i>
+        </h2>
+
+        <p>
+            เลือก Set ที่เหมาะกับ
+            Routine ของคุณ
+        </p>
+
+    </div>
+
+
+
+    <div class="set-wrapper">
+
+
+        <!-- SET A -->
+
+        <article class="set-card">
+
+            <div class="set-number">
+                01
+            </div>
+
+            <span class="set-label">
+                SET A
+            </span>
+
+            <h3>
+                Glow Set
+            </h3>
+
+            <p>
+                เซตดูแลผิวเพื่อ
+                ผิวนุ่ม กระจ่างใส
+                และดูสุขภาพดี
+            </p>
+
+
+            <ul>
+
+                <li>✓ Pink Glow Body Mask</li>
+
+                <li>✓ Soft Skin Body Scrub</li>
+
+                <li>✓ Moisture Body Lotion</li>
+
+            </ul>
+
+
+            <div class="set-price">
+
+                ฿699
+
+                <del>
+                    ฿847
+                </del>
+
+            </div>
+
+
+            <button onclick="addToCart('SET A - Glow Set',699)">
+
+                เพิ่ม SET A
+
+            </button>
+
+        </article>
+
+
+
+        <!-- SET B -->
+
+        <article class="set-card premium">
+
+            <div class="set-number">
+                02
+            </div>
+
+            <span class="set-label">
+                SET B
+            </span>
+
+            <h3>
+                Premium Set
+            </h3>
+
+            <p>
+                เซตพรีเมียมสำหรับ
+                การดูแลผิวแบบครบขั้นตอน
+            </p>
+
+
+            <ul>
+
+                <li>✓ Pink Glow Body Mask</li>
+
+                <li>✓ Soft Skin Body Scrub</li>
+
+                <li>✓ Moisture Body Lotion</li>
+
+                <li>✓ Premium Gift Packaging</li>
+
+            </ul>
+
+
+            <div class="set-price">
+
+                ฿899
+
+                <del>
+                    ฿1,136
+                </del>
+
+            </div>
+
+
+            <button onclick="addToCart('SET B - Premium Set',899)">
+
+                เพิ่ม SET B
+
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SET LOGIC
+========================================= -->
+
+<section id="logic"
+         class="logic-section">
+
+
+    <div class="section-heading">
+
+        <span>
+            DISCRETE MATHEMATICS
+        </span>
+
+        <h2>
+            Set <i>Logic</i>
+        </h2>
+
+        <p>
+            การประยุกต์ใช้คณิตศาสตร์ดิสครีต
+            กับระบบสินค้า BODYMASK
+        </p>
+
+    </div>
+
+
+    <div class="logic-grid">
+
+
+        <div class="logic-card">
+
+            <div class="logic-symbol">
+                ∪
+            </div>
+
+            <h3>
+                Union
+            </h3>
+
+            <span>
+                A ∪ B
+            </span>
+
+            <p>
+                รวมสมาชิกจาก Set A
+                และ Set B
+                เข้าด้วยกัน
+                โดยไม่แสดงข้อมูลซ้ำ
+            </p>
+
+        </div>
+
+
+
+        <div class="logic-card">
+
+            <div class="logic-symbol">
+                ∩
+            </div>
+
+            <h3>
+                Intersection
+            </h3>
+
+            <span>
+                A ∩ B
+            </span>
+
+            <p>
+                หาสินค้าที่มีอยู่ร่วมกัน
+                ใน Set A และ Set B
+            </p>
+
+        </div>
+
+
+
+        <div class="logic-card">
+
+            <div class="logic-symbol">
+                −
+            </div>
+
+            <h3>
+                Difference
+            </h3>
+
+            <span>
+                A − B
+            </span>
+
+            <p>
+                หาสินค้าที่อยู่ใน
+                Set A แต่ไม่มีใน Set B
+            </p>
+
+        </div>
+
+
+
+        <div class="logic-card">
+
+            <div class="logic-symbol">
+                IF
+            </div>
+
+            <h3>
+                If / Else
+            </h3>
+
+            <span>
+                Condition
+            </span>
+
+            <p>
+                ใช้ตรวจสอบเงื่อนไข
+                เช่น ราคาและประเภทสินค้า
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="logic-result">
+
+        <span>
+            LIVE RESULT
+        </span>
+
+        <h3>
+            ผลการคำนวณ Set
+        </h3>
+
+        <div id="logicOutput"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section id="about"
+         class="about-section">
+
+
+    <div class="about-content">
+
+        <span>
+            ABOUT BODYMASK
+        </span>
+
+        <h2>
+            Luxury care,
+            <i>made for you.</i>
+        </h2>
+
+        <p>
+            BODYMASK PATTY
+            คือแบรนด์ Body Care
+            ที่นำความงาม ความหรูหรา
+            และการดูแลผิว
+            มารวมไว้ใน Collection เดียว
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CART MODAL
+========================================= -->
+
+<div id="cartModal"
+     class="cart-modal">
+
+    <div class="cart-box">
+
+        <button class="close-cart"
+                onclick="closeCart()">
+
+            ×
+
+        </button>
+
+        <span>
+            YOUR BAG
+        </span>
+
+        <h2>
+            Shopping Cart
+        </h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            รวมทั้งหมด
+
+            <strong id="cartTotal">
+                ฿0
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        BODYMASK
+        <span>PATTY</span>
+    </div>
+
+    <p>
+        Luxury Body Care Collection
+    </p>
+
+    <small>
+        © 2024 BODYMASK PATTY
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
